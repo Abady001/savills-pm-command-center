@@ -1,0 +1,337 @@
+{
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/skills-lock.json": {
+    "mtime": 1779412406.7256422,
+    "ast_hash": "e9d7d7e1fcf4aa187bcb78cbe3e40306",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/tsconfig.json": {
+    "mtime": 1779400516.0,
+    "ast_hash": "7831df54b0184c9a88a681bd02b3e9e4",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/eslint.config.mjs": {
+    "mtime": 1779400516.0,
+    "ast_hash": "13acc7103302ecb0361130192cb22520",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/postcss.config.mjs": {
+    "mtime": 1779400516.0,
+    "ast_hash": "675899342e765a4d16acd75a53389101",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/package.json": {
+    "mtime": 1779414800.6103806,
+    "ast_hash": "4f2aef28de1af351771b6765a9729a4d",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/next.config.ts": {
+    "mtime": 1779400516.0,
+    "ast_hash": "9b77af189a21a7a64e4bd7a426f64176",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/proxy.ts": {
+    "mtime": 1779400516.0,
+    "ast_hash": "439c77b6133e7d39cc1f04af8da74137",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/.claude/settings.local.json": {
+    "mtime": 1779414844.7853572,
+    "ast_hash": "7e7caa32e7078c3dedb14dd8c788a59b",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/.claude/settings.json": {
+    "mtime": 1779416839.4526544,
+    "ast_hash": "87f0d903477984d0587a02f8fe185263",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/convex/http.ts": {
+    "mtime": 1779415802.25213,
+    "ast_hash": "458a4b91acd941ec8a73bebb7ccaadd1",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/convex/tsconfig.json": {
+    "mtime": 1779400516.0,
+    "ast_hash": "e87faa74e11bb10a6b2489fcf7859cb1",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/convex/schema.ts": {
+    "mtime": 1779414815.7313728,
+    "ast_hash": "ac57177ae7768bc3e402f58f973f66de",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/convex/users.ts": {
+    "mtime": 1779414821.22637,
+    "ast_hash": "6203b1772689e07adc47eb73f2f5a2dc",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/convex/myFunctions.ts": {
+    "mtime": 1779400516.0,
+    "ast_hash": "8880634d1e983b782f2604ed53d2d0b1",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/convex/auth.config.ts": {
+    "mtime": 1779416104.3155038,
+    "ast_hash": "1fe29e87a2fe5162b644e3c2fc71cadf",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/convex/_generated/server.d.ts": {
+    "mtime": 1779400516.0,
+    "ast_hash": "a6d3e29e1cd98c6a0ebcf82d5074009e",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/convex/_generated/dataModel.d.ts": {
+    "mtime": 1779400516.0,
+    "ast_hash": "af87bff09394971f8debeb5b8e9f8a70",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/convex/_generated/server.js": {
+    "mtime": 1779400516.0,
+    "ast_hash": "cfc7a4ed084119abac0e51d79f525f4f",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/convex/_generated/api.d.ts": {
+    "mtime": 1779415825.7860777,
+    "ast_hash": "2c147d3a24371598ba8431da12abd7d6",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/convex/_generated/api.js": {
+    "mtime": 1779400516.0,
+    "ast_hash": "ea14005171d3e17b1b28a7139ad36d62",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/convex/_generated/ai/ai-files.state.json": {
+    "mtime": 1779412407.1746407,
+    "ast_hash": "bcf0bb8223f568556098e61472248351",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/.opencode/package.json": {
+    "mtime": 1779417175.2104993,
+    "ast_hash": "bc4105f797304ae00bc7e12f4f85bd1a",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/.opencode/opencode.json": {
+    "mtime": 1779417165.3216054,
+    "ast_hash": "e5f74d14a81702b55bdf53b33ec991d7",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/.opencode/plugins/graphify.js": {
+    "mtime": 1779416821.0140636,
+    "ast_hash": "64ccd3c03dbfe0980b6095766f5c4e52",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/components/ConvexClientProvider.tsx": {
+    "mtime": 1779400516.0,
+    "ast_hash": "af9b223afc9ce5997a553e9013a36d83",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/app/page.tsx": {
+    "mtime": 1779400516.0,
+    "ast_hash": "e71e0eaf867e5bd5aecc1b71821eebb6",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/app/layout.tsx": {
+    "mtime": 1779400516.0,
+    "ast_hash": "b208a714f1a2f199d21268a133f098e6",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/app/sign-in/[[...sign-in]]/page.tsx": {
+    "mtime": 1779413553.9975393,
+    "ast_hash": "8aa14abccb7f94dd416d94d0a98325ca",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/app/server/page.tsx": {
+    "mtime": 1779400516.0,
+    "ast_hash": "99ffa840dab8066d68d79d59a52ecd36",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/app/server/inner.tsx": {
+    "mtime": 1779400516.0,
+    "ast_hash": "6c624bae0ea7a1ebdf0c1b2ea73102f3",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/app/sign-up/[[...sign-up]]/page.tsx": {
+    "mtime": 1779413553.9975393,
+    "ast_hash": "67e85a66812d927cdb140db4da7c0e9e",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/AGENTS.md": {
+    "mtime": 1779416821.0137315,
+    "ast_hash": "9936cada7f8b0fd7fd5fc10325636465",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/CLAUDE.md": {
+    "mtime": 1779416839.452311,
+    "ast_hash": "243ee88b1239e86e2bd5e43f94672605",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/README.md": {
+    "mtime": 1779400516.0,
+    "ast_hash": "418d50e20395ef10912d6e0697e37b91",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/.agents/skills/convex/SKILL.md": {
+    "mtime": 1779412406.5831115,
+    "ast_hash": "a79b3d59cd110f16134585800b876874",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/.agents/skills/convex-performance-audit/SKILL.md": {
+    "mtime": 1779412406.646294,
+    "ast_hash": "a87f528412cb9f4b9d1a2cae6b77392e",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/.agents/skills/convex-performance-audit/references/hot-path-rules.md": {
+    "mtime": 1779412406.6472201,
+    "ast_hash": "8015a530db1586dc684daa40d37c9c5e",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/.agents/skills/convex-performance-audit/references/occ-conflicts.md": {
+    "mtime": 1779412406.6472201,
+    "ast_hash": "67910e750e26c1d431d8d46e50eca490",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/.agents/skills/convex-performance-audit/references/function-budget.md": {
+    "mtime": 1779412406.6471822,
+    "ast_hash": "7d3345eaa4cadd3706cb7d0c245e91ed",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/.agents/skills/convex-performance-audit/references/subscription-cost.md": {
+    "mtime": 1779412406.6472578,
+    "ast_hash": "6af1c1c1b47d36d2b69002111ce372df",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/.agents/skills/convex-performance-audit/agents/openai.yaml": {
+    "mtime": 1779412406.6471248,
+    "ast_hash": "fcceae233d93de638332d7419443bedf",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/.agents/skills/convex-create-component/SKILL.md": {
+    "mtime": 1779412406.6163912,
+    "ast_hash": "ec825ce9174c3c08775e6189be9c8b80",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/.agents/skills/convex-create-component/references/hybrid-components.md": {
+    "mtime": 1779412406.6177595,
+    "ast_hash": "927a09d1ec50cffbcbe90c0d3b7145f7",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/.agents/skills/convex-create-component/references/local-components.md": {
+    "mtime": 1779412406.61787,
+    "ast_hash": "fa7ca7ad7cb3a6599c0ed76ca7da1cf3",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/.agents/skills/convex-create-component/references/advanced-patterns.md": {
+    "mtime": 1779412406.617816,
+    "ast_hash": "c521b78d48ce8ae0bd9613766063e463",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/.agents/skills/convex-create-component/references/packaged-components.md": {
+    "mtime": 1779412406.6179125,
+    "ast_hash": "f2572e9e30a334c4ca4e96a54f16108b",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/.agents/skills/convex-create-component/agents/openai.yaml": {
+    "mtime": 1779412406.6177595,
+    "ast_hash": "0a7ae3f14ed8bbb7a59c8838d8e58bbc",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/.agents/skills/convex-setup-auth/SKILL.md": {
+    "mtime": 1779412406.669433,
+    "ast_hash": "06366db7119b25ddf68175979166d1a7",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/.agents/skills/convex-setup-auth/references/auth0.md": {
+    "mtime": 1779412406.6704512,
+    "ast_hash": "65d097addc858433fe10e97882528ae1",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/.agents/skills/convex-setup-auth/references/convex-auth.md": {
+    "mtime": 1779412406.670649,
+    "ast_hash": "6bf92f2d2db0304c5cb3d45751e9e082",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/.agents/skills/convex-setup-auth/references/workos-authkit.md": {
+    "mtime": 1779412406.670701,
+    "ast_hash": "43b20ab3d92d60ae7785ed73a024ad26",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/.agents/skills/convex-setup-auth/references/clerk.md": {
+    "mtime": 1779412406.6706247,
+    "ast_hash": "692b879bedc8bc5787e1813cd04cf711",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/.agents/skills/convex-setup-auth/agents/openai.yaml": {
+    "mtime": 1779412406.6703677,
+    "ast_hash": "6085f6499e386748452563303ad8d075",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/.agents/skills/convex-migration-helper/SKILL.md": {
+    "mtime": 1779412406.63214,
+    "ast_hash": "d847b785f67062a334989c89485a81eb",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/.agents/skills/convex-migration-helper/references/migration-patterns.md": {
+    "mtime": 1779412406.6326158,
+    "ast_hash": "600a39ee758284cb13184a7c34fb0a9d",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/.agents/skills/convex-migration-helper/references/migrations-component.md": {
+    "mtime": 1779412406.632685,
+    "ast_hash": "405376f176f5e0a9857c69e86386c43e",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/.agents/skills/convex-migration-helper/agents/openai.yaml": {
+    "mtime": 1779412406.632572,
+    "ast_hash": "2e6fb6113c711b485feae55627659d19",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/.agents/skills/convex-quickstart/SKILL.md": {
+    "mtime": 1779412406.656122,
+    "ast_hash": "6e611fcde8ac05c4c810dcd7fd5068a2",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/.agents/skills/convex-quickstart/agents/openai.yaml": {
+    "mtime": 1779412406.6563568,
+    "ast_hash": "488d168fd73397e3f8d84cc2191214bb",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/convex/README.md": {
+    "mtime": 1779400516.0,
+    "ast_hash": "3a0f15b8c7f1cc532958811e1ce6d311",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/convex/_generated/ai/guidelines.md": {
+    "mtime": 1779412401.5546014,
+    "ast_hash": "e1d69cf237f235d870171f1c50306b82",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/.agents/skills/convex-performance-audit/assets/icon.svg": {
+    "mtime": 1779412406.6473281,
+    "ast_hash": "9d96d8029f3a3e73c898bffd41abbf4b",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/.agents/skills/convex-create-component/assets/icon.svg": {
+    "mtime": 1779412406.6177595,
+    "ast_hash": "750ee31db4186a3a336f1c6376a15221",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/.agents/skills/convex-setup-auth/assets/icon.svg": {
+    "mtime": 1779412406.6704512,
+    "ast_hash": "5fd65f0f070bca77e1ea8ed46fbc1fd3",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/.agents/skills/convex-migration-helper/assets/icon.svg": {
+    "mtime": 1779412406.6326158,
+    "ast_hash": "d3f9b469ddd0979fdf7a34ffdf0d291d",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/.agents/skills/convex-quickstart/assets/icon.svg": {
+    "mtime": 1779412406.6564116,
+    "ast_hash": "ee6d5a57c359c31069c6543131eecfb0",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/public/convex.svg": {
+    "mtime": 1779400516.0,
+    "ast_hash": "20364a01e3ca0df13c306ce011fab625",
+    "semantic_hash": ""
+  }
+}
