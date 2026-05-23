@@ -48,15 +48,21 @@ export default async function DashboardPage() {
             </Link>
           </div>
           <div className="rounded-lg border bg-white dark:bg-slate-900 p-6 shadow-sm">
-            <h2 className="font-semibold mb-1">Tenants</h2>
+            <h2 className="font-semibold mb-1">Buildings</h2>
             <p className="text-slate-500 text-sm">
-              Tenant records scoped to this organization. Coming in Phase 2.
+              Manage buildings under properties for this organization.
             </p>
+            <Link
+              href="/buildings"
+              className="mt-3 inline-block text-sm font-medium text-slate-900 underline underline-offset-4 dark:text-slate-100"
+            >
+              Open Buildings
+            </Link>
           </div>
           <div className="rounded-lg border bg-white dark:bg-slate-900 p-6 shadow-sm">
             <h2 className="font-semibold mb-1">Leases</h2>
             <p className="text-slate-500 text-sm">
-              Lease tracking scoped to this organization. Coming in Phase 2.
+              Lease tracking scoped to this organization. Coming soon.
             </p>
           </div>
         </div>

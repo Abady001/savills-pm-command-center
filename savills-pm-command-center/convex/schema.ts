@@ -87,4 +87,37 @@ export default defineSchema({
     .index("by_organization_and_code", ["organizationId", "code"])
     .index("by_organization_and_status", ["organizationId", "status"])
     .index("by_organization_and_createdAt", ["organizationId", "createdAt"]),
+
+  buildings: defineTable({
+    organizationId: v.id("organizations"),
+    propertyId: v.id("properties"),
+    name: v.string(),
+    code: v.string(),
+    type: v.union(
+      v.literal("residential"),
+      v.literal("commercial"),
+      v.literal("retail"),
+      v.literal("mixed_use"),
+      v.literal("parking"),
+      v.literal("facility"),
+      v.literal("other"),
+    ),
+    status: v.union(
+      v.literal("active"),
+      v.literal("inactive"),
+      v.literal("archived"),
+    ),
+    address: v.optional(v.string()),
+    notes: v.optional(v.string()),
+    createdByClerkUserId: v.string(),
+    createdAt: v.number(),
+    updatedAt: v.number(),
+    archivedAt: v.optional(v.number()),
+  })
+    .index("by_organizationId", ["organizationId"])
+    .index("by_propertyId", ["propertyId"])
+    .index("by_organizationId_and_propertyId", ["organizationId", "propertyId"])
+    .index("by_organizationId_and_code", ["organizationId", "code"])
+    .index("by_organizationId_and_status", ["organizationId", "status"])
+    .index("by_organizationId_and_createdAt", ["organizationId", "createdAt"]),
 });
