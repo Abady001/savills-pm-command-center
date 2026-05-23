@@ -8,7 +8,11 @@
  * @module
  */
 
+import type * as http from "../http.js";
+import type * as lib_requireOrg from "../lib/requireOrg.js";
 import type * as myFunctions from "../myFunctions.js";
+import type * as organizations from "../organizations.js";
+import type * as properties from "../properties.js";
 import type * as users from "../users.js";
 
 import type {
@@ -18,7 +22,11 @@ import type {
 } from "convex/server";
 
 declare const fullApi: ApiFromModules<{
+  http: typeof http;
+  "lib/requireOrg": typeof lib_requireOrg;
   myFunctions: typeof myFunctions;
+  organizations: typeof organizations;
+  properties: typeof properties;
   users: typeof users;
 }>;
 
