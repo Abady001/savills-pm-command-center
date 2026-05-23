@@ -9,6 +9,7 @@
  */
 
 import type * as http from "../http.js";
+import type * as lib_permissions from "../lib/permissions.js";
 import type * as lib_requireOrg from "../lib/requireOrg.js";
 import type * as myFunctions from "../myFunctions.js";
 import type * as organizations from "../organizations.js";
@@ -23,6 +24,7 @@ import type {
 
 declare const fullApi: ApiFromModules<{
   http: typeof http;
+  "lib/permissions": typeof lib_permissions;
   "lib/requireOrg": typeof lib_requireOrg;
   myFunctions: typeof myFunctions;
   organizations: typeof organizations;

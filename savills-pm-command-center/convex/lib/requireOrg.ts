@@ -17,6 +17,11 @@ function getString(value: unknown): string | null {
   return typeof value === "string" && value.length > 0 ? value : null;
 }
 
+function getStringArray(value: unknown): string[] {
+  if (!Array.isArray(value)) return [];
+  return value.filter((item): item is string => typeof item === "string");
+}
+
 function normalizeOrgRole(role: string | null): string {
   if (!role) return "org:member";
   return role.startsWith("org:") ? role : `org:${role}`;
@@ -26,12 +31,13 @@ export type OrgClaims = {
   clerkOrgId: string | null;
   orgSlug: string | null;
   orgRole: string;
+  orgPermissions: string[];
 };
 
 export function readOrgClaims(identity: unknown): OrgClaims {
   const claims = getRecord(identity);
   if (!claims) {
-    return { clerkOrgId: null, orgSlug: null, orgRole: "org:member" };
+    return { clerkOrgId: null, orgSlug: null, orgRole: "org:member", orgPermissions: [] };
   }
 
   const compactOrg = getRecord(claims.o);
@@ -46,18 +52,25 @@ export function readOrgClaims(identity: unknown): OrgClaims {
     getString(claims.org_role) ?? getString(compactOrg?.rol),
   );
 
-  return { clerkOrgId, orgSlug, orgRole };
+  // Permissions live in compact claim o.per (array) or flattened org_permissions (array)
+  const orgPermissions: string[] =
+    getStringArray(compactOrg?.per).length > 0
+      ? getStringArray(compactOrg?.per)
+      : getStringArray(claims.org_permissions);
+
+  return { clerkOrgId, orgSlug, orgRole, orgPermissions };
 }
 
 // ---------------------------------------------------------------------------
 // requireOrg — resolves org context for every domain function
 // ---------------------------------------------------------------------------
 
-type RequireOrgResult = {
+export type RequireOrgResult = {
   organizationId: Id<"organizations">;
   clerkOrgId: string;
   clerkUserId: string;
   orgRole: string;
+  orgPermissions: string[];
 };
 
 export async function requireOrg(
@@ -68,7 +81,7 @@ export async function requireOrg(
     throw new Error("Unauthenticated");
   }
 
-  const { clerkOrgId, orgRole } = readOrgClaims(identity);
+  const { clerkOrgId, orgRole, orgPermissions } = readOrgClaims(identity);
 
   if (!clerkOrgId) {
     throw new Error("No active organization selected");
@@ -88,5 +101,6 @@ export async function requireOrg(
     clerkOrgId,
     clerkUserId: identity.subject,
     orgRole,
+    orgPermissions,
   };
 }

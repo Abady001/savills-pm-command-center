@@ -2,6 +2,7 @@
 
 import { FormEvent, useMemo, useState } from "react";
 import { useConvexAuth, useMutation, useQuery } from "convex/react";
+import { useAuth } from "@clerk/nextjs";
 import { api } from "@/convex/_generated/api";
 import type { Doc, Id } from "@/convex/_generated/dataModel";
 
@@ -67,6 +68,11 @@ function mapPropertyToDraft(property: Doc<"properties">): PropertyDraft {
 
 export default function PropertiesClient() {
   const { isLoading: isConvexAuthLoading, isAuthenticated } = useConvexAuth();
+  const { has } = useAuth();
+
+  const canCreate = has?.({ permission: "org:properties:create" }) ?? false;
+  const canUpdate = has?.({ permission: "org:properties:update" }) ?? false;
+  const canArchive = has?.({ permission: "org:properties:archive" }) ?? false;
   const [createForm, setCreateForm] = useState<PropertyDraft>(INITIAL_FORM);
   const [drafts, setDrafts] = useState<Record<string, PropertyDraft>>({});
   const [message, setMessage] = useState<string | null>(null);
@@ -220,6 +226,7 @@ export default function PropertiesClient() {
 
   return (
     <div className="space-y-8">
+      {canCreate && (
       <section className="rounded-lg border bg-white p-5 shadow-sm dark:bg-slate-900">
         <h2 className="text-lg font-semibold">Create Property</h2>
         <form className="mt-4 grid gap-4 md:grid-cols-2" onSubmit={onCreate}>
@@ -376,6 +383,7 @@ export default function PropertiesClient() {
           </div>
         </form>
       </section>
+      )}
 
       <section className="rounded-lg border bg-white p-5 shadow-sm dark:bg-slate-900">
         <div className="mb-4 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
@@ -538,22 +546,26 @@ export default function PropertiesClient() {
                   </div>
 
                   <div className="mt-4 flex flex-wrap gap-2">
-                    <button
-                      type="button"
-                      className="rounded-md bg-slate-900 px-3 py-2 text-sm font-medium text-white hover:bg-slate-700 disabled:opacity-60"
-                      onClick={() => onUpdate(property)}
-                      disabled={isUpdating[propertyKey]}
-                    >
-                      {isUpdating[propertyKey] ? "Saving..." : "Save changes"}
-                    </button>
-                    <button
-                      type="button"
-                      className="rounded-md border border-red-300 px-3 py-2 text-sm font-medium text-red-700 hover:bg-red-50 disabled:opacity-60"
-                      onClick={() => onArchive(property._id)}
-                      disabled={isArchiving[propertyKey] || property.status === "archived"}
-                    >
-                      {isArchiving[propertyKey] ? "Archiving..." : "Archive"}
-                    </button>
+                    {canUpdate && (
+                      <button
+                        type="button"
+                        className="rounded-md bg-slate-900 px-3 py-2 text-sm font-medium text-white hover:bg-slate-700 disabled:opacity-60"
+                        onClick={() => onUpdate(property)}
+                        disabled={isUpdating[propertyKey]}
+                      >
+                        {isUpdating[propertyKey] ? "Saving..." : "Save changes"}
+                      </button>
+                    )}
+                    {canArchive && (
+                      <button
+                        type="button"
+                        className="rounded-md border border-red-300 px-3 py-2 text-sm font-medium text-red-700 hover:bg-red-50 disabled:opacity-60"
+                        onClick={() => onArchive(property._id)}
+                        disabled={isArchiving[propertyKey] || property.status === "archived"}
+                      >
+                        {isArchiving[propertyKey] ? "Archiving..." : "Archive"}
+                      </button>
+                    )}
                   </div>
                 </article>
               );

@@ -1,7 +1,7 @@
 import { mutation, query, MutationCtx, QueryCtx } from "./_generated/server";
 import { v } from "convex/values";
 import { Id } from "./_generated/dataModel";
-import { requireOrg } from "./lib/requireOrg";
+import { requireOrgPermission, propertyPermissions } from "./lib/permissions";
 
 const propertyTypeValidator = v.union(
   v.literal("residential"),
@@ -54,7 +54,10 @@ export const list = query({
     includeArchived: v.optional(v.boolean()),
   },
   handler: async (ctx, args) => {
-    const { organizationId } = await requireOrg(ctx);
+    const { organizationId } = await requireOrgPermission(
+      ctx,
+      propertyPermissions.read,
+    );
 
     const rows = await ctx.db
       .query("properties")
@@ -77,7 +80,10 @@ export const get = query({
     propertyId: v.id("properties"),
   },
   handler: async (ctx, args) => {
-    const { organizationId } = await requireOrg(ctx);
+    const { organizationId } = await requireOrgPermission(
+      ctx,
+      propertyPermissions.read,
+    );
     const property = await ctx.db.get(args.propertyId);
 
     if (!property) {
@@ -106,7 +112,10 @@ export const create = mutation({
     description: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
-    const { organizationId, clerkUserId } = await requireOrg(ctx);
+    const { organizationId, clerkUserId } = await requireOrgPermission(
+      ctx,
+      propertyPermissions.create,
+    );
 
     const name = assertNonEmpty("Name", args.name);
     const code = assertNonEmpty("Code", normalizeCode(args.code));
@@ -165,7 +174,10 @@ export const update = mutation({
     description: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
-    const { organizationId, clerkUserId } = await requireOrg(ctx);
+    const { organizationId, clerkUserId } = await requireOrgPermission(
+      ctx,
+      propertyPermissions.update,
+    );
     const property = await ctx.db.get(args.propertyId);
 
     if (!property) {
@@ -287,7 +299,10 @@ export const archive = mutation({
     propertyId: v.id("properties"),
   },
   handler: async (ctx, args) => {
-    const { organizationId, clerkUserId } = await requireOrg(ctx);
+    const { organizationId, clerkUserId } = await requireOrgPermission(
+      ctx,
+      propertyPermissions.archive,
+    );
     const property = await ctx.db.get(args.propertyId);
 
     if (!property) {
