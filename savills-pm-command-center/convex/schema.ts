@@ -51,4 +51,40 @@ export default defineSchema({
     metadata: v.optional(v.record(v.string(), v.string())),
     createdAt: v.number(),
   }).index("by_organizationId_and_createdAt", ["organizationId", "createdAt"]),
+
+  properties: defineTable({
+    organizationId: v.id("organizations"),
+    name: v.string(),
+    code: v.string(),
+    type: v.union(
+      v.literal("residential"),
+      v.literal("commercial"),
+      v.literal("retail"),
+      v.literal("mixed_use"),
+      v.literal("administrative"),
+      v.literal("industrial"),
+      v.literal("other"),
+    ),
+    status: v.union(
+      v.literal("active"),
+      v.literal("mobilization"),
+      v.literal("inactive"),
+      v.literal("archived"),
+    ),
+    addressLine1: v.optional(v.string()),
+    city: v.string(),
+    country: v.string(),
+    timezone: v.string(),
+    currency: v.string(),
+    description: v.optional(v.string()),
+    createdByClerkUserId: v.string(),
+    updatedByClerkUserId: v.optional(v.string()),
+    archivedAt: v.optional(v.number()),
+    createdAt: v.number(),
+    updatedAt: v.number(),
+  })
+    .index("by_organization", ["organizationId"])
+    .index("by_organization_and_code", ["organizationId", "code"])
+    .index("by_organization_and_status", ["organizationId", "status"])
+    .index("by_organization_and_createdAt", ["organizationId", "createdAt"]),
 });

@@ -1,6 +1,7 @@
 import { auth } from "@clerk/nextjs/server";
 import { redirect } from "next/navigation";
 import { OrganizationSwitcher, UserButton } from "@clerk/nextjs";
+import Link from "next/link";
 import OrganizationSync from "@/components/OrganizationSync";
 
 export default async function DashboardPage() {
@@ -37,9 +38,14 @@ export default async function DashboardPage() {
           <div className="rounded-lg border bg-white dark:bg-slate-900 p-6 shadow-sm">
             <h2 className="font-semibold mb-1">Properties</h2>
             <p className="text-slate-500 text-sm">
-              Portfolio management scoped to this organization. Coming in Phase
-              2.
+              Portfolio management scoped to this organization.
             </p>
+            <Link
+              href="/properties"
+              className="mt-3 inline-block text-sm font-medium text-slate-900 underline underline-offset-4 dark:text-slate-100"
+            >
+              Open Properties
+            </Link>
           </div>
           <div className="rounded-lg border bg-white dark:bg-slate-900 p-6 shadow-sm">
             <h2 className="font-semibold mb-1">Tenants</h2>

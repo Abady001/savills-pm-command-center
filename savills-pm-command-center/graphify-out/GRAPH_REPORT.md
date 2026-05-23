@@ -1,16 +1,16 @@
 # Graph Report - savills-pm-command-center  (2026-05-22)
 
 ## Corpus Check
-- 60 files · ~27,334 words
+- 64 files · ~29,866 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 634 nodes · 627 edges · 48 communities (40 shown, 8 thin omitted)
+- 660 nodes · 659 edges · 49 communities (41 shown, 8 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 2 edges (avg confidence: 0.9)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `5d01849e`
+- Built from commit: `6350530b`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -57,6 +57,7 @@
 - [[_COMMUNITY_Community 39|Community 39]]
 - [[_COMMUNITY_Community 41|Community 41]]
 - [[_COMMUNITY_Community 45|Community 45]]
+- [[_COMMUNITY_Community 48|Community 48]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `compilerOptions` - 16 edges
@@ -82,7 +83,7 @@
 - `Graphify Agent Rules` --references--> `Convex AI Guidelines`  [EXTRACTED]
   AGENTS.md → convex/_generated/ai/guidelines.md
 
-## Communities (48 total, 8 thin omitted)
+## Communities (49 total, 8 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.05
@@ -109,8 +110,8 @@ Cohesion: 0.07
 Nodes (27): dependencies, @clerk/nextjs, @clerk/react, convex, next, react, react-dom, svix (+19 more)
 
 ### Community 6 - "Community 6"
-Cohesion: 0.07
-Nodes (13): http, svixId, svixSignature, svixTimestamp, wh, addNumber, listNumbers, myAction (+5 more)
+Cohesion: 0.08
+Nodes (23): http, svixId, svixSignature, svixTimestamp, wh, addNumber, listNumbers, myAction (+15 more)
 
 ### Community 7 - "Community 7"
 Cohesion: 0.08
@@ -220,8 +221,12 @@ Nodes (4): DataModel, Doc, Id, TableNames
 Cohesion: 0.50
 Nodes (3): dependencies, @kilocode/plugin, @opencode-ai/plugin
 
+### Community 48 - "Community 48"
+Cohesion: 0.08
+Nodes (7): components, INITIAL_FORM, PROPERTY_STATUSES, PROPERTY_TYPES, PropertyDraft, PropertyStatus, PropertyType
+
 ## Knowledge Gaps
-- **399 isolated node(s):** `version`, `source`, `sourceType`, `skillPath`, `computedHash` (+394 more)
+- **413 isolated node(s):** `version`, `source`, `sourceType`, `skillPath`, `computedHash` (+408 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **8 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -229,11 +234,11 @@ Nodes (3): dependencies, @kilocode/plugin, @opencode-ai/plugin
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `Convex Quickstart` connect `Community 1` to `Community 14`?**
-  _High betweenness centrality (0.027) - this node is a cross-community bridge._
+  _High betweenness centrality (0.025) - this node is a cross-community bridge._
 - **Why does `Writing Your First Function` connect `Community 14` to `Community 1`?**
-  _High betweenness centrality (0.022) - this node is a cross-community bridge._
+  _High betweenness centrality (0.020) - this node is a cross-community bridge._
 - **What connects `version`, `source`, `sourceType` to the rest of the system?**
-  _400 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _414 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.05128205128205128 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**

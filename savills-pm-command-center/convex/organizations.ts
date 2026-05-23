@@ -1,6 +1,7 @@
 import { mutation, query } from "./_generated/server";
 import { v } from "convex/values";
 import { Id } from "./_generated/dataModel";
+import { readOrgClaims } from "./lib/requireOrg";
 
 export const syncActiveOrganization = mutation({
   args: {
@@ -11,20 +12,16 @@ export const syncActiveOrganization = mutation({
     const identity = await ctx.auth.getUserIdentity();
     if (!identity) throw new Error("Unauthenticated");
 
-    const rawOrgId = identity.org_id;
-    const rawOrgRole = identity.org_role;
+    const { clerkOrgId, orgRole } = readOrgClaims(identity);
 
-    const orgId = typeof rawOrgId === "string" ? rawOrgId : undefined;
-    const orgRole = typeof rawOrgRole === "string" ? rawOrgRole : undefined;
-
-    if (!orgId) throw new Error("No active organization selected");
+    if (!clerkOrgId) throw new Error("No active organization selected");
 
     const clerkUserId = identity.subject;
     const now = Date.now();
 
     const existingOrg = await ctx.db
       .query("organizations")
-      .withIndex("by_clerkOrgId", (q) => q.eq("clerkOrgId", orgId))
+      .withIndex("by_clerkOrgId", (q) => q.eq("clerkOrgId", clerkOrgId))
       .unique();
 
     let organizationId: Id<"organizations">;
@@ -38,7 +35,7 @@ export const syncActiveOrganization = mutation({
       organizationId = existingOrg._id;
     } else {
       organizationId = await ctx.db.insert("organizations", {
-        clerkOrgId: orgId,
+        clerkOrgId,
         name: args.name,
         slug: args.slug,
         plan: "starter",
@@ -58,14 +55,14 @@ export const syncActiveOrganization = mutation({
 
     if (existingMember) {
       await ctx.db.patch(existingMember._id, {
-        role: orgRole ?? "org:member",
+        role: orgRole,
         updatedAt: now,
       });
     } else {
       await ctx.db.insert("organizationMembers", {
         organizationId,
         clerkUserId,
-        role: orgRole ?? "org:member",
+        role: orgRole,
         createdAt: now,
         updatedAt: now,
       });
@@ -90,13 +87,12 @@ export const current = query({
     const identity = await ctx.auth.getUserIdentity();
     if (!identity) return null;
 
-    const rawOrgId = identity.org_id;
-    const orgId = typeof rawOrgId === "string" ? rawOrgId : undefined;
-    if (!orgId) return null;
+    const { clerkOrgId } = readOrgClaims(identity);
+    if (!clerkOrgId) return null;
 
     return await ctx.db
       .query("organizations")
-      .withIndex("by_clerkOrgId", (q) => q.eq("clerkOrgId", orgId))
+      .withIndex("by_clerkOrgId", (q) => q.eq("clerkOrgId", clerkOrgId))
       .unique();
   },
 });

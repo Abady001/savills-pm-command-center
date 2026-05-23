@@ -20,9 +20,9 @@
     "semantic_hash": "675899342e765a4d16acd75a53389101"
   },
   "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/package.json": {
-    "mtime": 1779414800.6103806,
-    "ast_hash": "4f2aef28de1af351771b6765a9729a4d",
-    "semantic_hash": "4f2aef28de1af351771b6765a9729a4d"
+    "mtime": 1779426834.5471423,
+    "ast_hash": "9a3c251bbad44d7496dbadddf6fc2bd5",
+    "semantic_hash": ""
   },
   "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/next.config.ts": {
     "mtime": 1779400516.0,
@@ -30,13 +30,13 @@
     "semantic_hash": "9b77af189a21a7a64e4bd7a426f64176"
   },
   "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/proxy.ts": {
-    "mtime": 1779424527.4331949,
-    "ast_hash": "99ee32fb62e91275d827930cb04aba89",
+    "mtime": 1779425896.9613483,
+    "ast_hash": "29645842d295b9939e2dfd72030b3624",
     "semantic_hash": ""
   },
   "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/.claude/settings.local.json": {
-    "mtime": 1779424637.7693603,
-    "ast_hash": "dd12958a14fd89abc43488b1dbab5a96",
+    "mtime": 1779464103.0443902,
+    "ast_hash": "07cbbf0d4a0e85ff92589ae7e0de38d2",
     "semantic_hash": ""
   },
   "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/.claude/settings.json": {
@@ -55,8 +55,8 @@
     "semantic_hash": "e87faa74e11bb10a6b2489fcf7859cb1"
   },
   "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/convex/schema.ts": {
-    "mtime": 1779424480.2361145,
-    "ast_hash": "3722111489ac3efc5b018979aa0b10a5",
+    "mtime": 1779425673.4353786,
+    "ast_hash": "9dfb5be0c3c99441bf3fde1c007a331d",
     "semantic_hash": ""
   },
   "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/convex/users.ts": {
@@ -90,8 +90,8 @@
     "semantic_hash": "cfc7a4ed084119abac0e51d79f525f4f"
   },
   "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/convex/_generated/api.d.ts": {
-    "mtime": 1779424540.493216,
-    "ast_hash": "1ed95ca871d341174f92430fc0433f92",
+    "mtime": 1779425921.5151646,
+    "ast_hash": "e1edc79ed75bb1a66d0ee792dedb009a",
     "semantic_hash": ""
   },
   "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/convex/_generated/api.js": {
@@ -340,8 +340,8 @@
     "semantic_hash": ""
   },
   "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/components/OrganizationSync.tsx": {
-    "mtime": 1779424578.0252745,
-    "ast_hash": "c6a1100b0af648c57d35da2169fee19b",
+    "mtime": 1779427529.636747,
+    "ast_hash": "999a9eb8ea725749f13bb6f39f2212fa",
     "semantic_hash": ""
   },
   "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/app/onboarding/page.tsx": {
@@ -350,8 +350,43 @@
     "semantic_hash": ""
   },
   "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/app/dashboard/page.tsx": {
-    "mtime": 1779424519.4531817,
-    "ast_hash": "b41c351250966fbdd0c02278fb331f12",
+    "mtime": 1779425891.1553926,
+    "ast_hash": "bef5b84113af8ccd3824e10e572b847f",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/convex/properties.ts": {
+    "mtime": 1779425767.3934383,
+    "ast_hash": "9ed1d4c10f68eab5faab57fd3cb5ce40",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/convex/lib/requireOrg.ts": {
+    "mtime": 1779425691.9261823,
+    "ast_hash": "c07759a59392c20b7388e5cb0e011efb",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/components/properties/PropertiesClient.tsx": {
+    "mtime": 1779427449.8277767,
+    "ast_hash": "0cb0830b823c5e63298dc46adcbaeb1d",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/app/properties/page.tsx": {
+    "mtime": 1779425781.5393085,
+    "ast_hash": "f99569f7167eb925be9c7e4105775e3f",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/tmp-console.txt": {
+    "mtime": 1779427600.8987079,
+    "ast_hash": "704b1b7bc01df1a70d4e82fc22f92a00",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/.playwright-mcp/page-2026-05-22T05-26-36-370Z.yml": {
+    "mtime": 1779427596.3707106,
+    "ast_hash": "67de65a52fa9fe0798cd2a2e6edfbc80",
+    "semantic_hash": ""
+  },
+  "/home/abady/Desktop/savills-pm-command-center/savills-pm-command-center/.playwright-mcp/page-2026-05-22T05-26-47-277Z.yml": {
+    "mtime": 1779427607.2777038,
+    "ast_hash": "67de65a52fa9fe0798cd2a2e6edfbc80",
     "semantic_hash": ""
   }
 }
