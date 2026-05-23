@@ -16,6 +16,7 @@ import type * as lib_requireOrg from "../lib/requireOrg.js";
 import type * as myFunctions from "../myFunctions.js";
 import type * as organizations from "../organizations.js";
 import type * as properties from "../properties.js";
+import type * as tenants from "../tenants.js";
 import type * as units from "../units.js";
 import type * as users from "../users.js";
 
@@ -34,6 +35,7 @@ declare const fullApi: ApiFromModules<{
   myFunctions: typeof myFunctions;
   organizations: typeof organizations;
   properties: typeof properties;
+  tenants: typeof tenants;
   units: typeof units;
   users: typeof users;
 }>;
