@@ -60,10 +60,16 @@ export default async function DashboardPage() {
             </Link>
           </div>
           <div className="rounded-lg border bg-white dark:bg-slate-900 p-6 shadow-sm">
-            <h2 className="font-semibold mb-1">Leases</h2>
+            <h2 className="font-semibold mb-1">Floors</h2>
             <p className="text-slate-500 text-sm">
-              Lease tracking scoped to this organization. Coming soon.
+              Manage floors under buildings for this organization.
             </p>
+            <Link
+              href="/floors"
+              className="mt-3 inline-block text-sm font-medium text-slate-900 underline underline-offset-4 dark:text-slate-100"
+            >
+              Open Floors
+            </Link>
           </div>
         </div>
       </div>

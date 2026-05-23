@@ -120,4 +120,41 @@ export default defineSchema({
     .index("by_organizationId_and_code", ["organizationId", "code"])
     .index("by_organizationId_and_status", ["organizationId", "status"])
     .index("by_organizationId_and_createdAt", ["organizationId", "createdAt"]),
+
+  floors: defineTable({
+    organizationId: v.id("organizations"),
+    propertyId: v.id("properties"),
+    buildingId: v.id("buildings"),
+    name: v.string(),
+    code: v.string(),
+    level: v.number(),
+    type: v.union(
+      v.literal("residential"),
+      v.literal("commercial"),
+      v.literal("retail"),
+      v.literal("parking"),
+      v.literal("amenity"),
+      v.literal("mechanical"),
+      v.literal("other"),
+    ),
+    status: v.union(
+      v.literal("active"),
+      v.literal("inactive"),
+      v.literal("archived"),
+    ),
+    grossAreaSqm: v.optional(v.number()),
+    netAreaSqm: v.optional(v.number()),
+    notes: v.optional(v.string()),
+    createdByClerkUserId: v.string(),
+    createdAt: v.number(),
+    updatedAt: v.number(),
+    archivedAt: v.optional(v.number()),
+  })
+    .index("by_organizationId", ["organizationId"])
+    .index("by_propertyId", ["propertyId"])
+    .index("by_buildingId", ["buildingId"])
+    .index("by_organizationId_and_propertyId", ["organizationId", "propertyId"])
+    .index("by_organizationId_and_buildingId", ["organizationId", "buildingId"])
+    .index("by_organizationId_and_code", ["organizationId", "code"])
+    .index("by_organizationId_and_status", ["organizationId", "status"]),
 });
