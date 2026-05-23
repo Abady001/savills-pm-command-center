@@ -8,6 +8,7 @@
  * @module
  */
 
+import type * as buildings from "../buildings.js";
 import type * as http from "../http.js";
 import type * as lib_permissions from "../lib/permissions.js";
 import type * as lib_requireOrg from "../lib/requireOrg.js";
@@ -23,6 +24,7 @@ import type {
 } from "convex/server";
 
 declare const fullApi: ApiFromModules<{
+  buildings: typeof buildings;
   http: typeof http;
   "lib/permissions": typeof lib_permissions;
   "lib/requireOrg": typeof lib_requireOrg;
