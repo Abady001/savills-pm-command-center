@@ -34,7 +34,7 @@ export default async function DashboardPage() {
 
         <OrganizationSync />
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           <div className="rounded-lg border bg-white dark:bg-slate-900 p-6 shadow-sm">
             <h2 className="font-semibold mb-1">Properties</h2>
             <p className="text-slate-500 text-sm">
@@ -69,6 +69,18 @@ export default async function DashboardPage() {
               className="mt-3 inline-block text-sm font-medium text-slate-900 underline underline-offset-4 dark:text-slate-100"
             >
               Open Floors
+            </Link>
+          </div>
+          <div className="rounded-lg border bg-white dark:bg-slate-900 p-6 shadow-sm">
+            <h2 className="font-semibold mb-1">Units</h2>
+            <p className="text-slate-500 text-sm">
+              Manage rentable units under floors for this organization.
+            </p>
+            <Link
+              href="/units"
+              className="mt-3 inline-block text-sm font-medium text-slate-900 underline underline-offset-4 dark:text-slate-100"
+            >
+              Open Units
             </Link>
           </div>
         </div>
