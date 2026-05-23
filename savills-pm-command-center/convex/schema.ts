@@ -214,4 +214,53 @@ export default defineSchema({
     .index("by_organization_code", ["organizationId", "code"])
     .index("by_property_status", ["propertyId", "status"])
     .index("by_floor_status", ["floorId", "status"]),
+
+  tenants: defineTable({
+    organizationId: v.id("organizations"),
+    tenantType: v.union(v.literal("individual"), v.literal("company")),
+    displayName: v.string(),
+    legalName: v.optional(v.string()),
+    tradeName: v.optional(v.string()),
+    primaryContactName: v.optional(v.string()),
+    primaryEmail: v.optional(v.string()),
+    primaryPhone: v.optional(v.string()),
+    secondaryPhone: v.optional(v.string()),
+    taxId: v.optional(v.string()),
+    commercialRegisterNumber: v.optional(v.string()),
+    nationalIdOrPassport: v.optional(v.string()),
+    industry: v.optional(v.string()),
+    tenantCategory: v.optional(
+      v.union(
+        v.literal("residential"),
+        v.literal("commercial"),
+        v.literal("retail"),
+        v.literal("office"),
+        v.literal("anchor"),
+        v.literal("temporary"),
+        v.literal("staff_housing"),
+        v.literal("other"),
+      ),
+    ),
+    preferredLanguage: v.optional(v.string()),
+    billingAddress: v.optional(v.string()),
+    notes: v.optional(v.string()),
+    status: v.union(
+      v.literal("prospect"),
+      v.literal("active"),
+      v.literal("inactive"),
+      v.literal("blacklisted"),
+      v.literal("archived"),
+    ),
+    archivedAt: v.optional(v.number()),
+    createdAt: v.number(),
+    updatedAt: v.number(),
+    createdBy: v.string(),
+    updatedBy: v.optional(v.string()),
+  })
+    .index("by_organization", ["organizationId"])
+    .index("by_status", ["status"])
+    .index("by_tenantType", ["tenantType"])
+    .index("by_organization_displayName", ["organizationId", "displayName"])
+    .index("by_organization_primaryEmail", ["organizationId", "primaryEmail"])
+    .index("by_organization_primaryPhone", ["organizationId", "primaryPhone"]),
 });

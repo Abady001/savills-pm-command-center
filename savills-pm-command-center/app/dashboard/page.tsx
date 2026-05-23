@@ -83,6 +83,18 @@ export default async function DashboardPage() {
               Open Units
             </Link>
           </div>
+          <div className="rounded-lg border bg-white dark:bg-slate-900 p-6 shadow-sm">
+            <h2 className="font-semibold mb-1">Tenants</h2>
+            <p className="text-slate-500 text-sm">
+              Manage tenant and occupier records for this organization.
+            </p>
+            <Link
+              href="/tenants"
+              className="mt-3 inline-block text-sm font-medium text-slate-900 underline underline-offset-4 dark:text-slate-100"
+            >
+              Open Tenants
+            </Link>
+          </div>
         </div>
       </div>
     </main>
